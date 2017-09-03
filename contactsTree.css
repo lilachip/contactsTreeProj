@@ -4,13 +4,8 @@ body {
     font-family:'Times New Roman', Times, serif;    
 }
 
-/* a, a:visited {
-    text-decoration: none;
-    cursor: pointer;
-} */
-
 ul, li {
-	margin:0px;
+	margin:2px;
 }
 
 ul {
@@ -18,9 +13,9 @@ ul {
     margin-left: -28px;
 }
 
-.contacts-tree li {
+/* .contacts-tree li {
     padding: 4px;
-}
+} */
 
 .contactsTree ul > li:hover > div > span{
     background-color: #BAE2F9;
