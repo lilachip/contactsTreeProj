@@ -1,0 +1,17 @@
+
+    <script type="text/ng-template" id="contactsTree">
+        <div ng-click="$ctrl.toggleGroup(group.id)">
+          <span> {{group.name}}</span>
+            <ul ng-if="$ctrl.isGroupCanShow(group)" ng-click="$ctrl.toggleGroup(group.id)" class="child">
+                <li ng-repeat="group in group.contacts"   
+                ng-include="'contactsTree'">           
+                </li>
+            </ul>
+            </div>
+        </script>
+    
+        <h1> Contacts Tree</h1>
+        <ul class="parent">
+            <li ng-repeat="group in $ctrl.contactsList" ng-include="'contactsTree'"></li>
+        </ul>    
+    

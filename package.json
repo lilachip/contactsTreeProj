@@ -1,0 +1,13 @@
+{
+    "name": "contactsTree",
+    "version": "1.0.0",
+    "scripts": {
+
+    },
+    "dependencies": {
+      "angular": "1.5.8"
+    },
+    "devDependencies": {
+     
+    }
+}

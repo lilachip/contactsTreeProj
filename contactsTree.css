@@ -1,0 +1,34 @@
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    padding: 8px;
+    font-size: 20px;
+}
+
+a, a:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul, li {
+	margin-left: -8px;
+}
+
+ul {
+	list-style: none;
+}
+
+.contacts-tree li {
+	/* margin-left: 5px; */
+}
+
+/* .contacts-tree li span{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	background-color: white;
+} */
+
+.contacts-tree ul > li:hover > div > span{
+    background-color: #BAE2F9;
+    /* color:white; */
+}
