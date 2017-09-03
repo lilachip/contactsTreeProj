@@ -28,6 +28,4 @@ ul {
     /* color:white; */
 }
 
-.listHeader ul > li:hover > div > span{
-  background: white;
-}
+
