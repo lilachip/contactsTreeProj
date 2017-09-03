@@ -2,7 +2,7 @@
     <script type="text/ng-template" id="contactsTree">
         <div ng-click="$ctrl.toggleGroup(group.id)">
           <span class="listHeader"> {{group.name}}</span>
-            <ul ng-if="$ctrl.isGroupCanShow(group)" ng-click="$ctrl.toggleGroup(group.id)" class="child">
+            <ul ng-if="$ctrl.isGroupCanShow(group)" ng-click="$ctrl.toggleGroup(group.id)">
                 <li ng-repeat="group in group.contacts"   
                 ng-include="'contactsTree'">           
                 </li>

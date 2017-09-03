@@ -5,7 +5,7 @@ body {
 }
 
 ul, li {
-	margin:2px;
+	margin-bottom:8px;
 }
 
 ul {
@@ -13,14 +13,8 @@ ul {
     margin-left: -28px;
 }
 
-/* .contacts-tree li {
-    padding: 4px;
-} */
-
-.contactsTree ul > li:hover > div > span{
+.contactsTree ul[ng-click]> li:hover > div > span{
     background-color: #BAE2F9;
     display: block;
-    /* color:white; */
 }
-
 
