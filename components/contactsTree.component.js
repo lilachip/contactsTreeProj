@@ -1,23 +1,21 @@
+var contactsTreeController = function (contactsTreeService) {
+    var _this = this;
 
+    //gets the data from the service - at the moment statically...
+    _this.contactList = contactsTreeService.data;
+    
+    _this.expandable = function (contact) {
+        return /^group$/i.test(contact.type) && Object.prototype.toString.call(contact.contacts) === '[object Array]';
+    }
 
-var contactsTreeController = function(contactsTreeService) {
-    //keeping the scope obj localy
-	var self = this;
-
-    self.isActive = [];
-    //gets the data from the service - at the moment staticly...
-    self.contactsList = contactsTreeService.data;
-    //toggle items header
-    self.toggleGroup = function(contactId) {
-        self.isActive[contactId] = !self.isActive[contactId];
-    }  
-   //shows elements according to group's choice
-    self.isGroupCanShow = function(group) {
-    	return group.contacts && self.isActive[group.id];
-    }  
+    _this.toggleExpansion = function (contact) {
+        if (_this.expandable(contact)) {
+            contact.expanded = !contact.expanded;
+        }
+    }
 }
 
 angular.module('contactsTreeApp').component('contactsTree', {
     templateUrl: 'components/contactsTree.template.html',
     controller: contactsTreeController
-     });
+});

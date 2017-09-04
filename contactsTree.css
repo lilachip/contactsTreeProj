@@ -1,5 +1,4 @@
 body {
-    /* padding: 8px; */
     font-size: 22px;
     font-family:'Times New Roman', Times, serif;    
 }
@@ -13,8 +12,8 @@ ul {
     margin-left: -28px;
 }
 
-.contactsTree ul[ng-click]> li:hover > div > span{
+.expandable:hover {
     background-color: #BAE2F9;
     display: block;
+    cursor: pointer;
 }
-
